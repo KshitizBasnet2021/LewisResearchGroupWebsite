@@ -3,10 +3,6 @@
 		{
 			"name": "ResearchGroupWebsite",
 			"path": "."
-		},
-		{
-			"name": "css",
-			"path": "..\\..\\Downloads\\ECOURSES Free Website Template - Free-CSS.com\\online-courses-html-template\\css"
 		}
 	],
 	"settings": {}
