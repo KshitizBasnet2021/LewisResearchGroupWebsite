@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Research Group</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Research" name="keywords" />
+    <meta content="Research" name="description" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="navigation-bar"></div>
+    <div class="container-fluid page-header">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center"
+          style="min-height: 300px"
+        >
+          <h3 class="display-6 text-white text-uppercase">Publications</h3>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#footer").load("./components/footer.html");
+      $("#navigation-bar").load("./components/header.html", function () {
+        $("#publications").addClass("active");
+      });
+    });
+  </script>
+</html>
